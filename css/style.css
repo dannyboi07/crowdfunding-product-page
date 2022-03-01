@@ -1,0 +1,323 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Commissioner', sans-serif;
+  background-image: url("../images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f2f2f2;
+}
+
+.head {
+  padding: 3.5em 11.5vw;
+  -webkit-box-shadow: inset 0 125px 60px -50px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 125px 60px -50px rgba(0, 0, 0, 0.5);
+}
+
+.head__nav-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  max-width: 275px;
+  min-width: 200px;
+}
+
+.head__nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.head__nav-item a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #7a7a7a;
+          text-decoration-color: #7a7a7a;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav img {
+  width: 150px;
+  height: 25px;
+}
+
+.master-ctn {
+  width: 50%;
+  margin: 11.5% auto 0 auto;
+}
+
+.master-ctn section {
+  background-color: white;
+  margin: 1.5em 0;
+  padding: 3em;
+  border-radius: 0.5em;
+}
+
+.section-1 {
+  position: relative;
+  padding-top: 4em !important;
+  text-align: center;
+}
+
+.section-1__logo {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.section-1 h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.section-1 p {
+  margin-bottom: 2.5em;
+  color: #7a7a7a;
+}
+
+.section-1__back-bmark-ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-1__back-bmark-ctn button {
+  font-weight: 700;
+}
+
+.section-1__back-bmark-ctn button:hover {
+  cursor: pointer;
+}
+
+.section-1__back {
+  font-size: 0.925rem;
+  font-weight: 700;
+  padding: 0.5em 2.5em;
+  border-radius: 5em;
+  background-color: #3cb4ac;
+  color: white;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.section-1__back:hover {
+  background-color: #147b74;
+}
+
+.section-1__bmark-ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5em;
+  background-color: #f2f2f2;
+}
+
+.section-1__bmark-ctn img {
+  -webkit-transition: -webkit-filter 0.25s;
+  transition: -webkit-filter 0.25s;
+  transition: filter 0.25s;
+  transition: filter 0.25s, -webkit-filter 0.25s;
+}
+
+.section-1__bmark-ctn:hover img {
+  -webkit-filter: invert(22%) sepia(0%) saturate(1784%) hue-rotate(258deg) brightness(100%) contrast(88%);
+          filter: invert(22%) sepia(0%) saturate(1784%) hue-rotate(258deg) brightness(100%) contrast(88%);
+}
+
+.section-1__bmark-ctn__bmark-img--green {
+  -webkit-filter: invert(35%) sepia(14%) saturate(2819%) hue-rotate(128deg) brightness(100%) contrast(84%) !important;
+          filter: invert(35%) sepia(14%) saturate(2819%) hue-rotate(128deg) brightness(100%) contrast(84%) !important;
+}
+
+.section-1__bmark {
+  background-color: transparent;
+  color: #7a7a7a;
+  height: 100%;
+  font-size: 0.925rem;
+  padding: 0.5em 1.75em 0.5em 1em;
+}
+
+.section-1__bmark--green-text {
+  color: #147b74;
+}
+
+.section-2__stats-ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-2__stat-ctn {
+  width: 25%;
+}
+
+.section-2__stat-ctn:not(:first-child) {
+  padding-left: 3em;
+  width: 30%;
+}
+
+.section-2__stat-ctn p:first-child {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-2__stat-ctn p:not(:first-child) {
+  color: #7a7a7a;
+  margin-top: 0.5em;
+}
+
+.section-2__stat-ctn:not(:last-child) {
+  border-right: 1px solid #cccccc;
+}
+
+.section-2__prog-bar {
+  margin-top: 2em;
+  background-color: #f2f2f2;
+  height: 15px;
+  border-radius: 5em;
+}
+
+.section-2__prog-bar-color {
+  display: block;
+  border-radius: 5em;
+  background-color: #3cb4ac;
+  height: 100%;
+}
+
+.section-3 h2 {
+  margin-bottom: 1.75em;
+}
+
+.section-3 p {
+  color: #7a7a7a;
+  letter-spacing: 0.05em;
+  line-height: 2em;
+}
+
+.section-3__para-mb--2 {
+  margin: 1.75em 0;
+}
+
+.section-3__para-mb--2-5 {
+  margin-bottom: 2.5em;
+}
+
+.section-3__rwd-ctn {
+  border: 1.5px solid #cccccc;
+  padding: 2.5em;
+  border-radius: 0.5em;
+}
+
+.section-3__rwd-ctn--mid-ctn {
+  margin: 1.75em 0;
+}
+
+.section-3__rwd-ctn--stockout {
+  color: rgba(122, 122, 122, 0.9);
+  border-color: #e6e6e6;
+}
+
+.section-3__rwd-ctn--stockout p {
+  color: rgba(122, 122, 122, 0.7) !important;
+}
+
+.section-3__rwd-ctn--stockout p > span {
+  color: rgba(122, 122, 122, 0.9) !important;
+}
+
+.section-3__rwd-ctn--stockout .section-3__pledge-amt {
+  color: rgba(23, 135, 128, 0.5) !important;
+}
+
+.section-3__rwd-ctn--stockout button {
+  background-color: #b3b3b3 !important;
+}
+
+.section-3__rwd-ctn--stockout button:hover {
+  cursor: default !important;
+}
+
+.section-3__pledge-rwd-ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-3__left-rwd-btn-ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-3__left-rwd-btn-ctn p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-3__left-rwd-btn-ctn p > span {
+  font-size: 2rem;
+  margin-right: 0.25em;
+  font-weight: 700;
+  color: black;
+}
+
+.section-3__pledge-amt {
+  color: #147b74 !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.section-3 button {
+  font-size: 0.925rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 1.25em 2.5em;
+  border-radius: 5em;
+  background-color: #3cb4ac;
+  color: white;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.section-3 button:hover {
+  cursor: pointer;
+  background-color: #147b74;
+}
+/*# sourceMappingURL=style.css.map */

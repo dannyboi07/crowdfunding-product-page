@@ -1,0 +1,311 @@
+// Primary
+$prim-mod-cyan: hsl(176, 50%, 47%);
+$prim-dark-cyan: hsl(176, 72%, 28%);
+// Neutral
+$black: hsl(0, 0%, 0%);
+$dark-gray: hsl(0, 0%, 48%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Commissioner', sans-serif;
+  background-image: url("../images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.head {
+  padding: 3.5em 11.5vw;
+  box-shadow: inset 0 125px 60px -50px rgba(0,0,0,0.5);
+
+  &__nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 275px;
+    min-width: 200px;
+  }
+
+  &__nav-item a {
+    text-decoration: none;
+    color: white;
+    // font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $dark-gray;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 150px;
+    height: 25px;
+  }
+}
+
+.master-ctn {
+  width: 50%;
+  margin: 11.5% auto 0 auto;
+
+  section {
+    background-color: white;
+    margin: 1.5em 0;
+    padding: 3em;
+
+    border-radius: 0.5em;
+  }
+}
+
+.section-1 {
+  position: relative;
+  padding-top: 4em !important;
+  text-align: center;
+
+  &__logo {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    margin-bottom: 2.5em;
+    color: $dark-gray;
+  }
+
+  &__back-bmark-ctn {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      font-weight: 700;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__back {
+    font-size: 0.925rem;
+    font-weight: 700;
+    padding: 0.5em 2.5em;
+    border-radius: 5em;
+
+    background-color: $prim-mod-cyan;
+    color: white;
+    transition: background-color 0.25s;
+
+    &:hover {
+      background-color: $prim-dark-cyan;
+    }
+  }
+
+  &__bmark-ctn {
+    display: flex;
+    align-items: center;
+    border-radius: 5em;
+
+    background-color: hsl(0, 0%, 95%);
+    img { transition: filter 0.25s; }
+
+    &:hover {
+
+      img {
+        filter: invert(22%) 
+          sepia(0%) 
+          saturate(1784%) 
+          hue-rotate(258deg) 
+          brightness(100%) 
+          contrast(88%);
+      }
+    }
+
+    &__bmark-img--green {
+      filter: invert(35%) 
+        sepia(14%) 
+        saturate(2819%) 
+        hue-rotate(128deg) 
+        brightness(100%) 
+        contrast(84%) !important;
+    }
+  }
+
+  &__bmark {
+    background-color: transparent;
+    color: $dark-gray;
+    height: 100%;
+    font-size: 0.925rem;
+    padding: 0.5em 1.75em 0.5em 1em;
+
+    &--green-text {
+      color: $prim-dark-cyan;
+    }
+  }
+}
+
+.section-2 {
+
+  &__stats-ctn {
+    display: flex;
+    // justify-content: space-between;
+  }
+
+  &__stat-ctn {
+    width: 25%;
+
+    &:not(:first-child) {
+      padding-left: 3em;
+      width: 30%;
+    }
+    
+    p:first-child {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    p:not(:first-child) {
+      color: $dark-gray;
+      margin-top: 0.5em;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid hsl(0, 0%, 80%);
+    }
+  }
+
+  &__prog-bar {
+    margin-top: 2em;
+    background-color: hsl(0, 0%, 95%);
+    height: 15px;
+    border-radius: 5em;
+  }
+
+  &__prog-bar-color {
+    display: block;
+    border-radius: 5em;
+    background-color: $prim-mod-cyan;
+    height: 100%;
+  }
+}
+
+.section-3 {
+  h2 {
+    margin-bottom: 1.75em;
+  }
+
+  p {
+    color: $dark-gray;
+    letter-spacing: 0.05em;
+    line-height: 2em;
+  }
+
+  &__para-mb {
+
+    &--2 {
+      margin: 1.75em 0;
+    }
+
+    &--2-5 {
+      margin-bottom: 2.5em;
+    }
+  }
+
+  &__rwd-ctn {
+    border: 1.5px solid hsl(0, 0%, 80%);
+    padding: 2.5em;
+    border-radius: 0.5em;
+
+    &--mid-ctn {
+      margin: 1.75em 0;
+    }
+
+    &--stockout {
+      color: hsla(0, 0%, 48%, 0.9);
+      border-color: hsl(0, 0%, 90%);
+
+      p {
+        color: hsla(0, 0%, 48%, 0.7) !important;
+      }
+
+      p > span {
+        color: hsla(0, 0%, 48%, 0.9) !important;
+      }
+
+      .section-3__pledge-amt {
+        color: hsla(176, 71%, 31%, 0.5) !important;
+      }
+
+      button {
+        background-color: hsl(0, 0%, 70%) !important;
+
+        &:hover {
+          cursor: default !important;
+        }
+      }
+    }
+  }
+
+  &__pledge-rwd-ctn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left-rwd-btn-ctn {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      display: flex;
+      align-items: center;
+    }
+
+    p > span {
+      font-size: 2rem;
+      margin-right: 0.25em;
+      font-weight: 700;
+      color: black;
+    }
+  }
+
+  &__pledge-amt {
+    color: $prim-dark-cyan !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.925rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 1.25em 2.5em;
+    border-radius: 5em;
+    background-color: $prim-mod-cyan;
+    color: white;
+    transition: background-color 0.25s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $prim-dark-cyan;
+    }
+  }
+}
