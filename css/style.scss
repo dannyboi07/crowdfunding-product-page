@@ -309,3 +309,40 @@ nav {
     }
   }
 }
+
+.back-prj-mdl {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 3em;
+  background-color: white;
+}
+
+.pldg-rwd-list {
+  list-style-type: none;
+}
+
+.pldg-rwd-item {
+  display: flex;
+  padding: 1.5em;
+
+  input {
+    margin-right: 1.5em;
+    width: 25px;
+    height: 25px;
+  }
+
+  &__pldg-hdr {
+    display: flex;
+    justify-content: space-between;
+
+    &--left {
+      display: flex;
+    }
+  }
+}
+
+.pldg-rwd-list * {
+  border: 1px solid;
+}

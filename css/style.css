@@ -320,4 +320,50 @@ nav img {
   cursor: pointer;
   background-color: #147b74;
 }
+
+.back-prj-mdl {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 3em;
+  background-color: white;
+}
+
+.pldg-rwd-list {
+  list-style-type: none;
+}
+
+.pldg-rwd-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5em;
+}
+
+.pldg-rwd-item input {
+  margin-right: 1.5em;
+  width: 25px;
+  height: 25px;
+}
+
+.pldg-rwd-item__pldg-hdr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pldg-rwd-item__pldg-hdr--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pldg-rwd-list * {
+  border: 1px solid;
+}
 /*# sourceMappingURL=style.css.map */

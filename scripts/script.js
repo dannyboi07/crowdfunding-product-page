@@ -9,4 +9,4 @@ bmark.addEventListener("click", () => {
   ? bmark.textContent = "Bookmarked"
   : bmark.textContent = "Bookmark"
 
-})
+});
